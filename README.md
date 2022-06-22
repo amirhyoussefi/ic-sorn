@@ -34,17 +34,17 @@ IC System of Record Notary
 1. Subscribe to the `"Apples"` topic.
 
    ```text
-   dfx canister call sub init '("BTC-PRICE-AT-COINBASE")'
+   dfx canister call subscriber init '("BTC-PRICE-AT-COINBASE")'
    ```
 
 1. Publish to the `"Apples"` topic.
 
    ```text
-   dfx canister call pub publish '(record { "topic" = "BTC-PRICE-AT-COINBASE"; "value" = "{ts: 1655791699, price: 21000.00}" })'
+   dfx canister call notary publish '(record { "topic" = "BTC-PRICE-AT-COINBASE"; "value" = 21000 })'
    ```
 
 1. Receive your subscription.
 
    ```text
-   dfx canister call sub getRecord
+   dfx canister call subscriber getRecord
    ```

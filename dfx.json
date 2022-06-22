@@ -1,10 +1,13 @@
 {
   "canisters": {
-    "pub": {
-      "main": "src/pub/Main.mo"
+    "notary": {
+      "main": "src/notary/Main.mo"
     },
-    "sub": {
-      "main": "src/sub/Main.mo"
+    "subscriber": {
+      "main": "src/subscriber/Main.mo"
+    },
+    "sender": {
+      "main": "src/sender/Main.mo"
     }
   },
   "dfx": "0.10.1"

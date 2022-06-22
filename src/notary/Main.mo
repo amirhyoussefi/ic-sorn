@@ -1,4 +1,4 @@
-// Publisher
+// Notary
 
 import Array "mo:base/Array";
 
@@ -6,7 +6,7 @@ actor Publisher {
 
   type Record = {
     topic : Text;
-    value : Text;
+    value : Nat;
   };
 
   type Subscriber = {
