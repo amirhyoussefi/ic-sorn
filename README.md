@@ -1,7 +1,21 @@
+
+## On-chain System of Record with Public Notary
+
 ## Overview
 
-IC System of Record Notary
+We use Internet Computers following advantages to make a cheap and scalable System of Record with Public Notary:
 
+1. Low Cost of on-chain data storage
+
+1. Async inter-canister calls for scalability and lower latency
+
+Then develop more features on that:
+
+1. Oracle (real world measures through API)
+
+1. Reveal Share feature with selective Decryption key sharing
+
+1. Billing
 
 ## Deploy Instructions
 
@@ -16,7 +30,7 @@ IC System of Record Notary
 1. Reserve an identifier for your canister.
 
    ```text
-   dfx canister create --all
+   dfx canister create --all 
    ```
 
 1. Build your canister.
